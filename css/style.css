@@ -1,0 +1,173 @@
+hmtl {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	margin: 0;
+	padding: 8px 0;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: "Courier New", monospace;
+	background: linear-gradient(to bottom, #222, #111) fixed;
+}
+
+header {
+	display: flex;
+	height: 15vh;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+footer {
+	display: flex;
+	height: 15vh;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 60px;
+}
+
+.title div {
+	display: flex;
+	align-items: center;
+}
+
+.title img {
+	height: 50px;
+	width: 50px;
+}
+
+.middle-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.rules {
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+}
+.round-count {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.elements-cards {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 72px;
+}
+
+.element {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+	width: 400px;
+}
+
+.fire {
+	border: 2px solid rgb(212, 82, 30);
+	border-radius: 25px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgb(83, 32, 32);
+}
+
+.water {
+	border: 2px solid rgb(55, 135, 255);
+	border-radius: 25px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgb(24, 24, 85);
+}
+
+.earth {
+	border: 2px solid rgb(201, 255, 77);
+	border-radius: 25px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgb(20, 78, 20);
+}
+
+.reset {
+	margin: 32px;
+	padding: 24px;
+	font-size: 18px;
+	visibility: hidden;
+	border: 3px solid #fff;
+	border-radius: 12px;
+	color: #fff;
+	background-color: transparent;
+}
+
+.players-counts {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 72px;
+}
+
+.player-title {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.player-count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	height: 50px;
+	width: 50px;
+	font-size: 18px;
+	font-weight: 300;
+	border: 2px solid #fff;
+	border-radius: 12px;
+	color: #fff;
+}
+
+.round-result {
+	margin: 40px;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: 300;
+	font-style: italic;
+}
