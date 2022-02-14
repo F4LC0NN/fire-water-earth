@@ -121,3 +121,15 @@ computerCount.innerHTML = 0;
 roundCount.innerHTML = '';
 resultBackgroundColor.style.visibility = 'hidden';
 }
+
+/*
+--------------------
+UI
+--------------------
+*/
+
+// Create selectors on the elements we want to update
+let fire = document.querySelector('.fire');
+let water = document.querySelector('.water');
+let earth = document.querySelector('.earth');
+let reset = document.querySelector('.reset');
