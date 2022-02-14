@@ -133,3 +133,7 @@ let fire = document.querySelector('.fire');
 let water = document.querySelector('.water');
 let earth = document.querySelector('.earth');
 let reset = document.querySelector('.reset');
+let playerCount = document.querySelector('.player-win-count');
+let computerCount = document.querySelector('.computer-win-count');
+let roundCount = document.querySelector('.round-count');
+let AnnounceRoundResult = document.querySelector('.round-result');
