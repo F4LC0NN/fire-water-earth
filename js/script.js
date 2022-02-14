@@ -184,3 +184,7 @@ let earthEvent = earth.addEventListener('click', () => {
 
 // Create a click event to reset the game
 let resetEvent = reset.addEventListener('click', resetGame);
+
+// Input the updated score for each player
+playerCount.innerHTML = '0';
+computerCount.innerHTML = '0';
