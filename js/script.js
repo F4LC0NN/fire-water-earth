@@ -141,3 +141,46 @@ let AnnounceRoundResult = document.querySelector('.round-result');
 // Create selectors to update the reset button's visibility automatically
 let resultBackgroundColor = document.getElementById('result-text');
 let resetButton = document.getElementById('reset');
+
+// Create click events to trigger the players' choice.
+// The player chooses fire
+let fireEvent = fire.addEventListener('click', () => {
+  handleClick('FIRE');
+  // Trigger a blue background color for the text result box
+  resultBackgroundColor.style.background = 'linear-gradient(to bottom, #1b60ff, #001a49)';
+  // Trigger a 3px white border for text result box
+  resultBackgroundColor.style.border = '3px solid white';
+  // Set a rounded border radius
+  resultBackgroundColor.style.borderRadius = '8px';
+  // Show result text
+  resultBackgroundColor.style.visibility = 'visible';
+});
+
+// The player chooses water
+let waterEvent = water.addEventListener('click', () => {
+  handleClick('WATER')
+  // Trigger a blue background color for the text result box
+  resultBackgroundColor.style.background = 'linear-gradient(to bottom, #1b60ff, #001a49)';
+  // Trigger a 3px white border for text result box
+  resultBackgroundColor.style.border = '3px solid white';
+  // Set a rounded border radius
+  resultBackgroundColor.style.borderRadius = '8px';
+    // Show result text
+    resultBackgroundColor.style.visibility = 'visible';
+});
+
+// The player chooses earth
+let earthEvent = earth.addEventListener('click', () => {
+  handleClick('EARTH')
+  // Trigger a blue background color for the text result box
+  resultBackgroundColor.style.background = 'linear-gradient(to bottom, #1b60ff, #001a49)';
+  // Trigger a 3px white border for text result box
+  resultBackgroundColor.style.border = '3px solid white';
+  // Set a rounded border radius
+  resultBackgroundColor.style.borderRadius = '8px';
+    // Show result text
+    resultBackgroundColor.style.visibility = 'visible';
+});
+
+// Create a click event to reset the game
+let resetEvent = reset.addEventListener('click', resetGame);
