@@ -51,4 +51,33 @@ function playRound(playerSelection, computerSelection) {
   playerSelection === 'WATER' && computerSelection === 'EARTH' ||
   playerSelection === 'EARTH' && computerSelection === 'FIRE';
 
+  // Create a switch statement that sets the conditions
+  switch (true) {
+    case tie:
+      // Input the number of rounds
+      roundCount.innerHTML = `Round ${++rounds}`;
+      result = `It's a tie!`;
+      // Input the result's value
+      AnnounceRoundResult.innerHTML = result;
+      break;
+    case win:
+      // Input the number of rounds
+      roundCount.innerHTML = `Round ${++rounds}`;
+      // Input the player's score
+      playerCount.innerHTML = ++playerScore;
+      result = `You won! ${capitalize(playerSelection)} beats ${capitalize(computerSelection)}. The round is yours!`;
+      // Input the result's value
+      AnnounceRoundResult.innerHTML = result;
+      break;
+    case lose:
+      // Input the number of rounds
+      roundCount.innerHTML = `Round ${++rounds}`;
+      // Input the computer's score
+      computerCount.innerHTML = ++computerScore;
+      result = `You lost! ${capitalize(computerSelection)} beats ${capitalize(playerSelection)}. Your opponent has the round.`;
+      // Input the result's value
+      AnnounceRoundResult.innerHTML = result;
+      break;
+  }
+
 }
