@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/index.css" />
+		<title>FIRE, WATER, EARTH</title>
+	</head>
+	<body>
+		<!-- SIZE: 15vh -->
+		<header>
+			<div class="title">
+				<div>
+					<img src="https://bit.ly/3oyiqdm" />
+					<h1>FIRE</h1>
+				</div>
+				<div>
+					<img src="https://bit.ly/3sq2N8T" />
+					<h1>WATER</h1>
+				</div>
+				<div>
+					<img src="https://bit.ly/34jBZzm" />
+					<h1>EARTH</h1>
+				</div>
+			</div>
+		</header>
+		<!-- SIZE: 70vh -->
+		<div class="middle-container">
+			<p class="rules">
+				Can you win 5 times in a row? <br />
+				Click on one element each round!
+			</p>
+			<!-- DISPLAY: Flex -->
+			<div class="elements-cards">
+				<button type="button" class="element fire">
+					<img src="https://bit.ly/3oyiqdm" />
+				</button>
+				<button type="button" class="element water">
+					<img src="https://bit.ly/3sq2N8T" />
+				</button>
+				<button type="button" class="element earth">
+					<img src="https://bit.ly/34jBZzm" />
+				</button>
+			</div>
+			<button type="button" class="reset" id="reset">RESET GAME</button>
+			<!-- DISPLAY: Flex -->
+			<p class="round-count"></p>
+			<div class="players-counts">
+				<h2 class="player-title">PLAYER</h2>
+				<div class="player-count">
+					<p class="player-win-count"></p>
+				</div>
+				<h2 class="player-title">COMPUTER</h2>
+				<div class="player-count">
+					<p class="computer-win-count"></p>
+				</div>
+			</div>
+			<div class="result-container">
+				<p class="round-result" id="result-text"></p>
+			</div>
+		</div>
+		<!-- SIZE: 15vh -->
+		<footer>
+			<h3>Copyright &copy; - Ruben THOMAS - 2022</h3>
+		</footer>
+		<script src="js/index.js"></script>
+	</body>
+</html>
