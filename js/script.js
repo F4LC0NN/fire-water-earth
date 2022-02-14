@@ -86,3 +86,21 @@ function capitalize(string) {
   // Capitalize only the first letter & turn the rest to lowercase
   return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
+
+// Create a function to trigger the player's choice
+function handleClick(playerSelection) {
+  // Create the player's win condition
+  if (playerScore === 5) {
+    AnnounceRoundResult.innerHTML = 'Congratulations! You won the battle!';
+    showReset();
+  // Create the computer's win condition
+  } else if (computerScore === 5) {
+    AnnounceRoundResult.innerHTML = 'How unfortunate! You lost the battle!';
+    showReset();
+  } else {
+    // Initialize the computer's choice
+    let computerSelection = computerPlay();
+    // Call and start the round
+    playRound(playerSelection, computerSelection);
+  }
+}
