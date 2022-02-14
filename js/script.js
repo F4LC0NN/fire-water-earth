@@ -79,5 +79,10 @@ function playRound(playerSelection, computerSelection) {
       AnnounceRoundResult.innerHTML = result;
       break;
   }
+}
 
+// Create a function that formats the characters cases
+function capitalize(string) {
+  // Capitalize only the first letter & turn the rest to lowercase
+  return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
