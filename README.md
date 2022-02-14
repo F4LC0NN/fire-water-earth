@@ -16,3 +16,6 @@ Here are the subgoals set:
 - When either player scores 5 points the game stops & declares the winner,
 - The scores, rounds and texts must be updated automatically,
 - There must be a way to reset the game.
+
+Special thanks to the website icons8.com for the free icons.
+https://icons8.com/
