@@ -34,3 +34,21 @@ function computerPlay() {
   let moves = ['FIRE', 'WATER', 'EARTH'];
   return moves[Math.floor(Math.random() * moves.length)];
 }
+
+// Create function named playRound that defines the winning conditions
+//It must have two parameters: playerSelection & computerSelection
+function playRound(playerSelection, computerSelection) {
+
+  // Define the winning conditions depending on the combination of moves
+  // Tie
+  let tie = playerSelection == computerSelection;
+  // Win
+  let win = playerSelection === 'FIRE' && computerSelection === 'EARTH' ||
+  playerSelection === 'WATER' && computerSelection === 'FIRE' ||
+  playerSelection === 'EARTH' && computerSelection === 'WATER';
+  // Lose
+  let lose = playerSelection === 'FIRE' && computerSelection === 'WATER' ||
+  playerSelection === 'WATER' && computerSelection === 'EARTH' ||
+  playerSelection === 'EARTH' && computerSelection === 'FIRE';
+
+}
