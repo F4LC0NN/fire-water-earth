@@ -104,3 +104,20 @@ function handleClick(playerSelection) {
     playRound(playerSelection, computerSelection);
   }
 }
+
+// Create a function that shows the reset button
+function showReset() {
+  resetButton.style.visibility = 'visible';
+}
+
+// Create a function that resets the game
+function resetGame() {
+resetButton.style.visibility = 'hidden';
+playerScore = 0;
+computerScore = 0;
+rounds = 0;
+playerCount.innerHTML = 0;
+computerCount.innerHTML = 0;
+roundCount.innerHTML = '';
+resultBackgroundColor.style.visibility = 'hidden';
+}
