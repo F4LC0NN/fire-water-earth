@@ -137,3 +137,7 @@ let playerCount = document.querySelector('.player-win-count');
 let computerCount = document.querySelector('.computer-win-count');
 let roundCount = document.querySelector('.round-count');
 let AnnounceRoundResult = document.querySelector('.round-result');
+
+// Create selectors to update the reset button's visibility automatically
+let resultBackgroundColor = document.getElementById('result-text');
+let resetButton = document.getElementById('reset');
